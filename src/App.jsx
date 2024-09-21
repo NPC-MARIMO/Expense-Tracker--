@@ -16,8 +16,8 @@ export default function App() {
         <div>
             <Header />
             <div className="container">
-                <Balance />
-                <IncomeExpenses />
+                <Balance transactions={transactions}  />
+                <IncomeExpenses transactions={transactions} />
                 <TransactionList transactions={transactions} />
                 <AddTransaction addTransaction={addTransaction} />
             </div>
